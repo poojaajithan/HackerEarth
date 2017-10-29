@@ -31,8 +31,7 @@ public class CalculateFine {
 			if(Integer.parseInt(inputArray[1]) %2 == 0)
 				totalFine.add(calculateTotalFine(Integer.parseInt(inputArray[0]), carNumbersArray, penaltiesArray, Integer.parseInt(inputArray[1]) %2 == 0));
 			else
-				totalFine.add(calculateTotalFine(Integer.parseInt(inputArray[0]), carNumbersArray, penaltiesArray, Integer.parseInt(inputArray[1]) %2 == 0));
-			
+				totalFine.add(calculateTotalFine(Integer.parseInt(inputArray[0]), carNumbersArray, penaltiesArray, Integer.parseInt(inputArray[1]) %2 == 0));			
 		}
 		System.out.println("Total fine : "+totalFine.toString().replace("[", "\n ").replace("]", " ").replace(",", "\n"));
 	}
